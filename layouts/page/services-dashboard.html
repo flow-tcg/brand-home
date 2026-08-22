@@ -8,6 +8,11 @@
 
   {{ .Content }}
 
+  <section class="summary">
+    <h2>7가지 서비스</h2>
+    <p>(주)플로우가 운영 중인 서비스입니다.</p>
+  </section>
+
   <footer>
     <p>이 페이지는 사람과 agents 모두가 읽을 수 있도록 설계되었습니다.</p>
     <p>서비스 상태는 정기적으로 업데이트됩니다.</p>
@@ -100,6 +105,17 @@
     border-top: 1px solid #eee;
     font-size: 0.9rem;
     color: #666;
+  }
+  .summary {
+    text-align: center;
+    margin: 3rem 0;
+    padding: 2rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+  }
+  .summary h2 {
+    border-bottom: none;
+    margin-bottom: 0.5rem;
   }
 </style>
 {{ end }}
