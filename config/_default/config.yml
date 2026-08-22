@@ -1,0 +1,32 @@
+title: (주)플로우
+baseURL: https://flow.pages.dev
+description: "(주)플로우는 다양한 형태의 서비스를 운영하는 회사입니다."
+
+locale: ko-kr
+defaultContentLanguage: ko
+defaultContentLanguageInSubdir: false
+hasCJKLanguage: true
+paginate: 16
+enableRobotsTXT: true
+
+languages:
+  ko:
+    disabled: false
+    label: 한국어
+    locale: ko-KR
+    title: (주)플로우
+    weight: 1
+    params:
+      languageLabel: 한국어
+    menus:
+      main:
+        - name: 서비스 현황
+          pageRef: /services-dashboard
+          weight: 1
+        - name: 소개
+          pageRef: /about
+          weight: 2
+
+params:
+  author: (주)플로우
+  description: "(주)플로우는 다양한 형태의 서비스를 운영하는 회사입니다."
