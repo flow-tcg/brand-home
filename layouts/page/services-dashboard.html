@@ -2,106 +2,72 @@
 <div class="services-dashboard">
   <header>
     <h1>{{ .Title }}</h1>
-    <p class="description">{{ .Description }}</p>
-    <p class="meta">최종 업데이트: {{ .Lastmod.Format "2006-01-02" }}</p>
+    <p>{{ .Description }}</p>
+    <p>최종 업데이트: {{ .Lastmod.Format "2006-01-02" }}</p>
   </header>
 
   {{ .Content }}
 
   <footer>
     <p>이 페이지는 사람과 agents 모두가 읽을 수 있도록 설계되었습니다.</p>
-    <p>서비스 상태는 정기적으로 업데이트됩니다.</p>
   </footer>
 </div>
 
 <style>
-  .services-dashboard {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 2rem;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-    line-height: 1.6;
-    color: #333;
-  }
   .services-dashboard header {
     margin-bottom: 2rem;
     padding-bottom: 1rem;
-    border-bottom: 1px solid #eee;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
   }
   .services-dashboard h1 {
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
-    font-weight: 600;
-  }
-  .services-dashboard .description {
-    font-size: 1.1rem;
-    color: #666;
-    margin-bottom: 0.5rem;
-  }
-  .services-dashboard .meta {
-    font-size: 0.9rem;
-    color: #999;
   }
   .services-dashboard section {
-    margin-bottom: 2.5rem;
+    margin-bottom: 2rem;
   }
   .services-dashboard h2 {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
     margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid #007bff;
-    color: #007bff;
-    font-weight: 600;
+    color: rgba(255,255,255,0.9);
   }
   .services-dashboard ul {
     list-style: none;
     padding: 0;
   }
   .services-dashboard li {
-    margin-bottom: 1.5rem;
-    padding: 1rem;
-    background: #f8f9fa;
+    margin-bottom: 1rem;
+    padding: 0.75rem;
+    background: rgba(255,255,255,0.03);
     border-radius: 4px;
-    border-left: 3px solid #007bff;
+    border-left: 2px solid rgba(255,255,255,0.2);
   }
   .services-dashboard li strong {
     display: block;
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-    color: #212529;
+    margin-bottom: 0.25rem;
+    color: #fff;
   }
   .services-dashboard pre {
-    line-height: 1.8;
-    padding: 1.5rem;
-    background: #f5f5f5;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
     border-radius: 4px;
-    overflow-x: auto;
+    padding: 1rem;
     font-size: 0.9rem;
-  }
-  .services-dashboard p {
-    margin-bottom: 0.5rem;
   }
   .services-dashboard table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
   .services-dashboard th,
   .services-dashboard td {
-    padding: 0.75rem;
-    border: 1px solid #dee2e6;
+    padding: 0.5rem;
+    border: 1px solid rgba(255,255,255,0.1);
     text-align: left;
   }
   .services-dashboard th {
-    background: #f8f9fa;
+    background: rgba(255,255,255,0.05);
     font-weight: 600;
-  }
-  .services-dashboard footer {
-    margin-top: 3rem;
-    padding-top: 1rem;
-    border-top: 1px solid #eee;
-    font-size: 0.9rem;
-    color: #666;
   }
 </style>
 {{ end }}
