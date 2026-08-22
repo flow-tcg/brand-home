@@ -7,10 +7,9 @@
 
   {{ .Content }}
 
-  <section class="cta">
-    <a href="/services-dashboard/" class="button primary">서비스 현황 보기</a>
-    <a href="/about/" class="button secondary">소개 보기</a>
-  </section>
+  <footer class="footer">
+    <p>&copy; 2026 (주)플로우. All rights reserved.</p>
+  </footer>
 </div>
 
 <style>
@@ -32,40 +31,21 @@
     font-size: 2.5rem;
     margin-bottom: 1rem;
     color: #212529;
+    font-weight: 600;
   }
   .tagline {
     font-size: 1.2rem;
     color: #666;
+    max-width: 600px;
+    margin: 0 auto;
   }
-  .cta {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
+  .footer {
     margin-top: 3rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
     border-top: 1px solid #eee;
-  }
-  .button {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    border-radius: 4px;
-    text-decoration: none;
-    font-weight: 500;
-    transition: background-color 0.2s;
-  }
-  .button.primary {
-    background: #007bff;
-    color: white;
-  }
-  .button.primary:hover {
-    background: #0056b3;
-  }
-  .button.secondary {
-    background: #6c757d;
-    color: white;
-  }
-  .button.secondary:hover {
-    background: #545b62;
+    font-size: 0.9rem;
+    color: #666;
+    text-align: center;
   }
 </style>
 {{ end }}

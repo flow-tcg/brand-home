@@ -8,11 +8,6 @@
 
   {{ .Content }}
 
-  <section class="summary">
-    <h2>7가지 서비스</h2>
-    <p>(주)플로우가 운영 중인 서비스입니다.</p>
-  </section>
-
   <footer>
     <p>이 페이지는 사람과 agents 모두가 읽을 수 있도록 설계되었습니다.</p>
     <p>서비스 상태는 정기적으로 업데이트됩니다.</p>
@@ -36,6 +31,7 @@
   .services-dashboard h1 {
     font-size: 1.8rem;
     margin-bottom: 0.5rem;
+    font-weight: 600;
   }
   .services-dashboard .description {
     font-size: 1.1rem;
@@ -55,6 +51,7 @@
     padding-bottom: 0.5rem;
     border-bottom: 2px solid #007bff;
     color: #007bff;
+    font-weight: 600;
   }
   .services-dashboard ul {
     list-style: none;
@@ -105,17 +102,6 @@
     border-top: 1px solid #eee;
     font-size: 0.9rem;
     color: #666;
-  }
-  .summary {
-    text-align: center;
-    margin: 3rem 0;
-    padding: 2rem;
-    background: #f8f9fa;
-    border-radius: 8px;
-  }
-  .summary h2 {
-    border-bottom: none;
-    margin-bottom: 0.5rem;
   }
 </style>
 {{ end }}
