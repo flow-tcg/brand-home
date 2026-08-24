@@ -13,58 +13,79 @@
         padding: 0;
         box-sizing: border-box;
       }
+      :root {
+        --ink: #000;
+        --muted: #333;
+        --line: #000;
+        --paper: #fff;
+        --accent: #000;
+        --blue: #000;
+        --green: #000;
+      }
       body {
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-        line-height: 1.6;
-        color: #fff;
-        background: #000;
-        max-width: 800px;
+        font-family: Georgia, 'Times New Roman', serif;
+        line-height: 1.55;
+        color: var(--ink);
+        background: var(--paper);
+        max-width: none;
         margin: 0 auto;
-        padding: 2rem;
+        padding: 1.5rem clamp(1.25rem, 4vw, 4rem);
       }
       a {
-        color: #fff;
+        color: var(--ink);
         text-decoration: none;
-        border-bottom: 1px solid rgba(255,255,255,0.3);
+        border-bottom: 1px solid var(--line);
         transition: border-color 0.2s;
       }
       a:hover {
-        border-color: #fff;
+        border-color: var(--ink);
       }
       nav {
-        margin-bottom: 3rem;
-        padding-bottom: 1rem;
-        border-bottom: 1px solid rgba(255,255,255,0.1);
+        max-width: 1200px;
+        margin: 0 auto 8rem;
+        padding-bottom: 1.25rem;
+        border-bottom: 1px solid var(--line);
         display: flex;
-        gap: 2rem;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
       }
       nav a {
-        border-bottom: none;
-        font-size: 0.9rem;
+        border-bottom: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        font-size: 0.78rem;
+        font-weight: 600;
+        letter-spacing: 0.08em;
         text-transform: uppercase;
-        letter-spacing: 0.05em;
-        opacity: 0.7;
         transition: opacity 0.2s;
       }
+      nav a:first-child { color: var(--ink); font-size: 1rem; }
+      nav a:nth-child(2), nav a:nth-child(3) { color: var(--ink); }
       nav a:hover {
         opacity: 1;
       }
       h1 {
-        font-size: 2rem;
-        font-weight: 600;
+        font-size: clamp(3.5rem, 10vw, 8.5rem);
+        font-weight: 400;
         margin-bottom: 1rem;
-        line-height: 1.2;
+        line-height: 0.95;
+        letter-spacing: -0.06em;
+        color: var(--ink);
       }
       h2 {
         font-size: 1.5rem;
         font-weight: 600;
         margin-top: 2rem;
         margin-bottom: 1rem;
-        color: rgba(255,255,255,0.9);
+        color: var(--ink);
+        text-decoration: underline;
+        text-decoration-color: var(--ink);
+        text-decoration-thickness: 0.12em;
+        text-underline-offset: 0.12em;
       }
       p {
         margin-bottom: 1rem;
-        color: rgba(255,255,255,0.7);
+        color: var(--muted);
       }
       ul {
         list-style: none;
@@ -73,26 +94,50 @@
       li {
         margin-bottom: 0.5rem;
         padding: 0.5rem 0;
-        border-bottom: 1px solid rgba(255,255,255,0.05);
+        border-bottom: 1px solid var(--line);
       }
       pre {
-        background: rgba(255,255,255,0.05);
-        border: 1px solid rgba(255,255,255,0.1);
+        background: #fff;
+        border: 1px solid var(--line);
         border-radius: 4px;
         padding: 1rem;
         overflow-x: auto;
         font-size: 0.9rem;
-        color: rgba(255,255,255,0.8);
+        color: var(--ink);
       }
       code {
         font-family: 'SF Mono', Monaco, 'Cascadia Code', monospace;
       }
       footer {
-        margin-top: 3rem;
+        max-width: 1200px;
+        margin: 10rem auto 0;
         padding-top: 1rem;
-        border-top: 1px solid rgba(255,255,255,0.1);
+        border-top: 1px solid var(--line);
         font-size: 0.8rem;
-        color: rgba(255,255,255,0.4);
+        color: var(--muted);
+      }
+      ::selection { color: #fff; background: #000; }
+      main { max-width: 1200px; margin: 0 auto; }
+      @media (max-width: 640px) {
+        body { padding: 1.25rem 1rem; text-align: center; }
+        nav {
+          margin-bottom: 5.5rem;
+          padding-bottom: 1rem;
+          justify-content: center;
+        }
+        nav a { font-size: 0.9rem; }
+        nav a:last-child { display: none; }
+        h1 {
+          font-size: clamp(4.25rem, 22vw, 7rem);
+          line-height: 0.9;
+          margin-bottom: 1.5rem;
+        }
+        h2 { font-size: 2rem; margin-top: 3rem; }
+        p, li { font-size: 1.15rem; }
+        p { margin-bottom: 1.5rem; }
+        ul { text-align: left; }
+        pre { text-align: left; font-size: 1rem; }
+        footer { margin-top: 7rem; }
       }
     </style>
   </head>

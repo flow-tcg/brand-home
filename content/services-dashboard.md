@@ -16,7 +16,7 @@ type: "page"
 (주)플로우
 
 ├── 웹 서비스
-│   ├── 공식 홈페이지 (Hugo) - /
+│   ├── 공식 홈페이지 (Hugo) - https://flow-brand.tcgc.uk
 │   └── 운영 시스템 (Cloudflare Workers) - https://flow.tcgc.uk
 │
 ├── 모바일 서비스
@@ -36,8 +36,8 @@ type: "page"
 
 | 서비스 | URL | 상태 | 유형 | 설명 |
 |--------|-----|------|------|------|
-| 공식 홈페이지 | / | ✅ 운영 중 | Hugo | (주)플로우 공식 사이트 |
-| 운영 시스템 | https://flow.tcgc.uk | ⚠️ DNS 설정 필요 | Cloudflare Workers | 회사 운영 관리 시스템 |
+| 공식 홈페이지 | <a href="https://flow-brand.tcgc.uk" target="_blank" rel="noopener noreferrer">flow-brand.tcgc.uk</a> | ✅ 운영 중 | Hugo | (주)플로우 공식 사이트 |
+| 운영 시스템 | <a href="https://flow.tcgc.uk" target="_blank" rel="noopener noreferrer">flow.tcgc.uk</a> | ⚠️ DNS 설정 필요 | Cloudflare Workers | 회사 운영 관리 시스템 |
 
 ### 모바일 서비스
 
@@ -88,7 +88,7 @@ Cloudflare D1 → 신규 기능 및 테스트 데이터
 
 | 이름 | 역할 | 이메일 | 상태 |
 |------|------|--------|------|
-| 한경수 | (주)플로우 대표이사 | flow001@eflow.co.kr | 기존 투자자, 지속 투자 |
+| 한경수 | (주)플로우 대표이사 | flow001@eflow.co.kr | 대표 |
 
 ## 참고 문서
 

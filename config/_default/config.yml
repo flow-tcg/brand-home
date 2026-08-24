@@ -9,6 +9,11 @@ hasCJKLanguage: true
 paginate: 16
 enableRobotsTXT: true
 
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
 languages:
   ko:
     disabled: false

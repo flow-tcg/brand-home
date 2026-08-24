@@ -1,11 +1,6 @@
-{{ define "main" }}
-<div class="home">
-  {{ .Content }}
-</div>
+{{ define "title" }}서비스 현황 | {{ .Site.Title }}{{ end }}
 
-<style>
-  .home {
-    margin-top: 2rem;
-  }
-</style>
+{{ define "main" }}
+<meta http-equiv="refresh" content="0; url={{ "services-dashboard/" | relURL }}">
+<p>서비스 현황으로 이동합니다. <a href="{{ "services-dashboard/" | relURL }}">바로가기</a></p>
 {{ end }}
