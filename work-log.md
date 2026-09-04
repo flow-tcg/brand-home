@@ -24,6 +24,21 @@
 - 공식 홈페이지 주소를 `https://flow-brand.tcgc.uk`로 반영함.
 - 서비스 위계와 현재 서비스 상태 표의 공식 홈페이지 항목을 실제 도메인으로 통일함.
 
+## 2026-08-24 — Cloudflare Pages 배포
+
+- `hugo --minify`로 정적 산출물을 생성하고 Pages 프로젝트 `flow-brand`에 배포함.
+- 배포 URL: `https://1739c677.flow-brand.pages.dev`
+- 커스텀 도메인 `https://flow-brand.tcgc.uk/`와 배포 URL 모두 HTTP 200 및 서비스 현황 콘텐츠를 확인함.
+
+## 2026-08-24 — 백엔드 관리 화면·DB 분리 운영 반영
+
+- 백엔드/API 구조에서 관리 화면과 DB를 별도 서비스로 분리해 운영하는 현재 상태를 기록함.
+- 서비스 위계, 상태 표, 시스템 구성에 별도 관리 화면과 별도 DB를 반영함.
+- 별도 관리 화면의 운영 URL을 `https://eflow.tcgc.uk/`로 추가하고 HTTP 200 응답을 확인함.
+- 관리용 DB가 Cloudflare D1 `eflow-admin-test-db-new`로 구성되었음을 기록함.
+- Cloudflare D1 Metrics 관리 링크를 서비스 대시보드에 추가함.
+- D1 DB 상태를 `Cloudflare에서 작동 중`으로 명시함.
+
 ## 2026-08-24 — Twenty Twenty-Three 참고 디자인 적용
 
 - WordPress 공식 Twenty Twenty-Three 테마의 clean/blank base, 넓은 여백, 큰 타이포그래피, wide layout 방향을 참고함.

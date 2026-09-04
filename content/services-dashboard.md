@@ -26,7 +26,8 @@ type: "page"
 │
 └── 백엔드/API
     ├── Java API (Spring Boot) - 후보 검토 중
-    ├── 관리자 화면 (Java) - 후보 검토 중
+    ├── 관리자 화면 (eflow) - https://eflow.tcgc.uk
+    ├── D1 DB (`eflow-admin-test-db-new`) - Cloudflare에서 작동 중
     └── 프론트엔드 (Cloudflare Worker) - 운영 중
 ```
 
@@ -52,7 +53,8 @@ type: "page"
 | 서비스 | URL | 상태 | 유형 | 설명 |
 |--------|-----|------|------|------|
 | Java API | - | 🔍 후보 검토 중 | Spring Boot | REST API 서버 |
-| 관리자 화면 | - | 🔍 후보 검토 중 | Java | 관리자 대시보드 |
+| 관리자 화면 | <a href="https://eflow.tcgc.uk/" target="_blank" rel="noopener noreferrer">eflow.tcgc.uk</a> | ✅ 운영 중 | 별도 배포 | 관리자 대시보드 |
+| D1 DB (`eflow-admin-test-db-new`) | <a href="https://dash.cloudflare.com/cedaf3a433ede6c25afb1bfad0943a4f/workers/d1/databases/8ed8bf5c-3ef7-4134-911d-d1c459ec8450/metrics" target="_blank" rel="noopener noreferrer">Cloudflare D1 Metrics</a> | ✅ Cloudflare에서 작동 중 | Cloudflare D1 | eflow 관리자용 데이터베이스 |
 | 프론트엔드 | - | ✅ 운영 중 | Cloudflare Worker | 프론트엔드 서비스 |
 
 ## 서비스 통계
@@ -61,8 +63,8 @@ type: "page"
 |------|---------|---------|---------|------|
 | 웹 서비스 | 1 | 0 | 0 | 1 |
 | 모바일 서비스 | 0 | 3 | 0 | 3 |
-| 백엔드/API | 1 | 0 | 2 | 3 |
-| **합계** | **2** | **3** | **2** | **7** |
+| 백엔드/API | 2 | 0 | 1 | 3 |
+| **합계** | **3** | **3** | **1** | **7** |
 
 ## 기술 스택 분포
 
@@ -78,10 +80,10 @@ type: "page"
 
 ```
 eflow-front  → Cloudflare Worker
-eflow-Admin  → Cloudflare Container → Java 8 / Tomcat → 별도 MySQL
+eflow-Admin  → 별도 관리 화면 → Java 8 / Tomcat → 별도 DB
 eflow-admin-cloudflare-api → Cloudflare에 별도 배포된 Admin API 서비스
 Android      → Java API (Retrofit)
-Cloudflare D1 → 신규 기능 및 테스트 데이터
+D1 DB        → eflow 관리자 화면과 분리 운영되는 데이터 저장소
 ```
 
 ## 주요 인물
