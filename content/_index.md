@@ -1,42 +1,14 @@
 ---
 title: "(주)플로우"
-description: "다양한 형태의 서비스를 운영하는 회사입니다."
+description: "웹·모바일·백엔드를 하나의 운영 흐름으로 연결하는 (주)플로우"
 ---
-
-# (주)플로우
-
-다양한 형태의 서비스를 운영하는 회사입니다.
-
-## 서비스
-
-- [서비스 대시보드](/services-dashboard/) - 전체 서비스 위계와 현재 상태
-- [소개](/about/) - 회사 정보 및 사업 영역
-
-## 기술
-
-- Hugo - 정적 사이트 생성
-- Cloudflare Workers - 서버리스 컴퓨팅
-- Apple Container - 컨테이너 운영
-- Gradle - Android 앱 빌드
-- Swift - iOS 앱 개발
-- Spring Boot - Java API 서버
-
-## 구성
-
-```
-eflow-front  → Cloudflare Worker
-eflow-Admin  → Cloudflare Container → Java 8 / Tomcat → 별도 MySQL
-eflow-admin-cloudflare-api → Cloudflare에 별도 배포된 Admin API 서비스
-Android      → Java API (Retrofit)
-Cloudflare D1 → 신규 기능 및 테스트 데이터
-```
-
-## 팀
-
-- 한경수 - (주)플로우 대표이사
-
-## 문서
-
-- [AGENTS.md](/AGENTS.md)
-- [work-log.md](/work-log.md)
-- [GitHub](https://github.com/flow-tcg/brand-home)
+<div class="topline"><div class="wrap mono"><span>FLOW / DIGITAL INFRASTRUCTURE</span><span>SEOUL, SOUTH KOREA&nbsp; · &nbsp;BUILDING WHAT LASTS</span></div></div>
+<nav class="home-nav" aria-label="주요 메뉴"><div class="wrap nav-inner"><a class="logo" href="/"><span class="logo-mark">F</span><span>flow<span style="color:#568567">.</span></span></a><div class="nav-links"><a href="#about">회사 소개</a><a href="#services">서비스</a><a href="#systems">시스템</a><a class="nav-action" href="#contact">문의하기 ↗</a></div></div></nav>
+<header class="hero" id="top"><div class="wrap hero-grid"><div><p class="mono eyebrow">TECHNOLOGY MEETS OPERATIONS</p><h1>서비스의<br>다음을 만드는<br><em>기술의 흐름.</em></h1><p class="hero-copy">웹에서 모바일, 백엔드에서 데이터까지. (주)플로우는 연결되는 기술로 실질적인 서비스를 만들고 운영합니다.</p><div class="actions"><a class="button button-lime" href="#services">서비스 살펴보기 <span>↗</span></a><a class="button button-outline" href="/about/">회사 알아보기 <span>↗</span></a></div></div><div class="terminal" aria-label="플로우 서비스 구성"><div class="terminal-head"><i></i><i></i><i></i><span class="mono">flow / system.map</span></div><div class="terminal-body"><span class="mono terminal-label">// CONNECTED BY DESIGN</span><h2 class="terminal-title">하나의 흐름, 여러 서비스.</h2><div class="terminal-row"><span class="symbol">01</span><strong>공식 홈페이지</strong><small>HUGO · WEB</small></div><div class="terminal-row"><span class="symbol">02</span><strong>운영 시스템</strong><small>CLOUDFLARE</small></div><div class="terminal-row"><span class="symbol">03</span><strong>모바일 서비스</strong><small>ANDROID · IOS</small></div><div class="terminal-row"><span class="symbol">04</span><strong>관리 · 데이터</strong><small>API · D1</small></div></div><div class="terminal-foot mono"><span>&gt; building connected services<span class="cursor"></span></span><span>FLOW / 01</span></div></div></div></header>
+<div class="strip"><div class="wrap strip-inner"><div class="strip-item"><b class="mono">01 /</b> WEB</div><div class="strip-item"><b class="mono">02 /</b> MOBILE</div><div class="strip-item"><b class="mono">03 /</b> BACKEND</div><div class="strip-item"><b class="mono">04 /</b> OPERATIONS</div></div></div>
+<section class="section" id="about"><div class="wrap"><div class="section-top"><span class="section-number mono">[ 01 / ABOUT ]</span><div><h2 class="section-title">기술을 연결하고,<br>운영의 복잡함은 줄입니다.</h2><p class="section-desc">(주)플로우는 화면 뒤의 시스템까지 함께 생각합니다. 각각의 기술이 따로 움직이는 대신, 제품과 운영이 하나의 방향으로 이어지도록 설계합니다.</p></div></div><div class="about-list"><article class="about-item"><span class="mono">01 — THINK</span><h3>먼저 이해합니다.</h3><p>무엇을 만들어야 하는지, 어떤 문제를 풀어야 하는지부터 분명하게 정의합니다.</p></article><article class="about-item"><span class="mono">02 — BUILD</span><h3>필요한 것을 만듭니다.</h3><p>웹, 앱, API, 데이터를 목적에 맞는 기술로 구성하고 서로 연결합니다.</p></article><article class="about-item"><span class="mono">03 — RUN</span><h3>계속 운영합니다.</h3><p>출시 이후의 변경과 관리까지 고려해 지속 가능한 구조를 지향합니다.</p></article></div></div></section>
+<section class="section services" id="services"><div class="wrap"><div class="section-top"><span class="section-number mono">[ 02 / SERVICES ]</span><div><h2 class="section-title">여러 접점.<br>하나의 운영 관점.</h2><p class="section-desc">서비스별 역할은 다르지만, 사용자에게 도달하는 경험과 그 뒤의 기술을 하나로 바라봅니다.</p></div></div><div class="service-list"><a class="service-row" href="https://flow-brand.tcgc.uk/"><span class="mono">01</span><h3>공식 홈페이지</h3><div><p>Hugo로 구축한 (주)플로우의 공식 웹사이트입니다.</p><span class="status-pill mono">운영 중 · HUGO</span></div><span class="arrow">↗</span></a><a class="service-row" href="/services-dashboard/"><span class="mono">02</span><h3>운영 시스템</h3><div><p>Cloudflare 기반 서비스와 관리자 화면을 분리해 관리합니다.</p><span class="status-pill mono">현황 확인하기</span></div><span class="arrow">↗</span></a><a class="service-row" href="/services-dashboard/"><span class="mono">03</span><h3>모바일 서비스</h3><div><p>Android와 iOS 앱을 통해 서비스의 접점을 확장합니다.</p><span class="status-pill mono">개발 중</span></div><span class="arrow">↗</span></a><a class="service-row" href="/services-dashboard/"><span class="mono">04</span><h3>백엔드 · 데이터</h3><div><p>관리 화면, API와 Cloudflare D1 데이터베이스를 구성합니다.</p><span class="status-pill mono">상세 현황 보기</span></div><span class="arrow">↗</span></a></div></div></section>
+<section class="section architecture" id="systems"><div class="wrap"><div class="section-top"><span class="section-number mono">[ 03 / SYSTEMS ]</span><div><h2 class="section-title">보이는 화면부터<br>보이지 않는 기반까지.</h2><p class="section-desc">각 구성 요소의 역할을 나누고 연결 지점을 분명히 합니다. 현재 서비스별 상세 상태는 현황 페이지에서 확인할 수 있습니다.</p></div></div><div class="architecture-grid"><div class="arch-intro"><span class="mono">// OPERATING MODEL</span><h3>좋은 서비스는<br>좋은 구조 위에서<br>움직입니다.</h3><p>서비스의 변화에 맞춰 기술도 확장될 수 있도록. 플로우는 제품과 인프라 사이의 흐름을 지속적으로 정리합니다.</p><div class="actions"><a class="button button-lime" href="/services-dashboard/">서비스 현황 보기 <span>↗</span></a></div></div><div class="arch-map"><span class="mono">FLOW / SERVICE LAYERS</span><div class="arch-step"><span class="step-icon">↳</span><span>공식 홈페이지</span><small>Hugo</small></div><div class="arch-step"><span class="step-icon">↳</span><span>프론트엔드</span><small>Cloudflare Worker</small></div><div class="arch-step"><span class="step-icon">↳</span><span>관리 화면</span><small>별도 서비스</small></div><div class="arch-step"><span class="step-icon">↳</span><span>데이터베이스</span><small>Cloudflare D1</small></div><div class="arch-step"><span class="step-icon">↳</span><span>모바일 앱</span><small>Android · iOS</small></div><p class="arch-note">기술 구성과 운영 상태는 변경될 수 있습니다. 최신 정보는 서비스 현황 페이지를 기준으로 확인해 주세요.</p></div></div></div></section>
+<section class="section" id="principles"><div class="wrap"><div class="section-top"><span class="section-number mono">[ 04 / APPROACH ]</span><div><h2 class="section-title">만드는 방식에도<br>기준이 필요합니다.</h2></div></div><div class="principles-list"><div class="principle"><span class="mono">01 /</span><h3>명확한 구조</h3><p>각 서비스와 시스템이 어떤 역할을 맡는지 분명하게 정리합니다.</p></div><div class="principle"><span class="mono">02 /</span><h3>연결되는 기술</h3><p>개별 도구보다 사용자 경험과 운영을 이어주는 전체 흐름에 집중합니다.</p></div><div class="principle"><span class="mono">03 /</span><h3>지속 가능한 운영</h3><p>오늘의 구현뿐 아니라 다음 변경을 받아들일 수 있는 기반을 만듭니다.</p></div></div></div></section>
+<section class="cta" id="contact"><div class="wrap"><span class="mono">[ LET'S CONNECT ]</span><h2>다음 흐름을<br>함께 만들어 볼까요?</h2><div class="cta-bottom"><p>웹, 모바일, 시스템에 관한 이야기를 기다립니다.</p><a class="button" href="mailto:flow001@eflow.co.kr">문의하기 <span>↗</span></a></div></div></section>
+<footer class="home-footer"><div class="wrap"><div class="footer-main"><a class="logo" href="/#top"><span class="logo-mark">F</span><span>flow.</span></a><div class="footer-links"><a href="/about/">회사 소개</a><a href="/services-dashboard/">서비스 현황</a><a href="https://github.com/flow-tcg/brand-home" target="_blank" rel="noopener noreferrer">GitHub ↗</a></div></div><div class="footer-bottom mono"><span>© 2026 (주)플로우</span><span>BUILT TO KEEP MOVING.</span></div></div></footer>
